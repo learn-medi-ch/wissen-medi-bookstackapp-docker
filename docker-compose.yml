@@ -26,6 +26,7 @@ services:
       - MYSQL_DATABASE=bookstackapp
       - MYSQL_USER=bookstack
       - MYSQL_PASSWORD=<replaceit>
+      - DB_DATABASE=bookstackapp
     volumes:
       - ../data:/config
     restart: unless-stopped
